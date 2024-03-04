@@ -2,10 +2,10 @@
 
 // Objeto Site
 let Site = {
-    nome = String,
-    url = String,
-    categoria = String,
-}
+    nome: String,
+    url: String,
+    categoria: String,
+};
 
 function FuncConstSite() {
     this.nome = "Google";
@@ -26,7 +26,7 @@ let Pessoa = {
     nome: String,
     idade: Number,
     profissao: String,
-}
+};
 
 function FuncConstPessoa() {
     this.nome = "Lucas";
@@ -42,7 +42,6 @@ pessoa.profissao;
 console.log(pessoa.nome);
 console.log(pessoa.idade);
 console.log(pessoa.profissao);
-
 
 // Objeto caneta
 let Caneta = {
