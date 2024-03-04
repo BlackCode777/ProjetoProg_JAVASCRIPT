@@ -22,10 +22,10 @@ console.log(site.url);
 console.log(site.categoria);
 
 // Objeto pessoa
-let Pessoa{
-    nome = String,
-    idade = Number,
-    profissao = String,
+let Pessoa = {
+    nome: String,
+    idade: Number,
+    profissao: String,
 }
 
 function FuncConstPessoa() {
