@@ -1,5 +1,12 @@
 // Data: 2024-03-03
 
+// Objeto em javascript
+let Pessoa2 = {
+    nome: "Lucas",
+    idade: 20,
+    profissao: "Desenvolvedor",
+};
+
 // Objeto Site
 let Site = {
     nome: String,
