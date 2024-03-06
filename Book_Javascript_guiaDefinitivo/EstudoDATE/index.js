@@ -10,7 +10,21 @@ h2.classList.add("maniClassListJavaScript"); // Adiciona uma classe
 // manipulanod h3
 let h3 = document.querySelector("h3"); // Selecionando tag (h3)
 h3.classList.add("maniClassListJavaScript"); // Adiciona uma classe
-//console.log(h3);
+
+/*
+    Estudo do parentNode e parentElement
+    - parentNode: Retorna o nó pai de um nó especificado no documento.
+    - parentElement: Retorna o elemento pai de um nó especificado no documento.
+
+    Diferença:
+    - parentNode: Retorna o nó pai de um nó especificado no documento.
+    - parentElement: Retorna o elemento pai de um nó especificado no documento.
+
+    esses dois métodos retornam o nó pai de um nó especificado no documento.
+*/
+let strong = document.querySelector("strong");
+console.log("parentElement >>> ", strong.parentElement);
+console.log("parentNode >>> ", strong.parentNode);
 
 function changeH3() {
     if (h3 == document.querySelector("h3")) {
