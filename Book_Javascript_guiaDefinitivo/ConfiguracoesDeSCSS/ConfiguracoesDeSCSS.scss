@@ -1,0 +1,46 @@
+// Variáveis
+$celular: 480px;
+$tablet: 768px;
+$desktop: 1024px;
+$tv: 1920px;
+$telasAltaResolucao: 3840px;
+
+/*
+Propriedade css para diminuir espaçamento entre elementos?
+
+*/
+
+// Configuração de media queries para celular
+@mixin celular {
+    @media (max-width: ($tablet - 1px)) {
+        @content;
+    }
+}
+
+// Configuração de media queries para tablet
+@mixin tablet {
+    @media (min-width: $tablet) and (max-width: ($desktop - 1px)) {
+        @content;
+    }
+}
+
+// Configuração de media queries para desktop
+@mixin desktop {
+    @media (min-width: $desktop) and (max-width: ($tv - 1px)) {
+        @content;
+    }
+}
+
+// Configuração de media queries para tv
+@mixin tv {
+    @media (min-width: $tv) and (max-width: ($telasAltaResolucao - 1px)) {
+        @content;
+    }
+}
+
+// Configuração de media queries para telas de alta resolução
+@mixin telasAltaResolucao {
+    @media (min-width: $telasAltaResolucao) {
+        @content;
+    }
+}
