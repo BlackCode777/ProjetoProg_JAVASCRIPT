@@ -1,0 +1,20 @@
+{
+    "name": "book_javascript_guiadefinitivo",
+    "version": "1.0.0",
+    "description": "modelo_tsConfig_para_Javascript",
+    "main": "/ManipulandoEventosComJavascript/ManipulandoEventosComJavascript.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/BlackCode777/ProjetoProg_JAVASCRIPT.git#main"
+    },
+    "keywords": [],
+    "author": "Anderson Martins",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/BlackCode777/ProjetoProg_JAVASCRIPT/issues"
+    },
+    "homepage": "https://github.com/BlackCode777/ProjetoProg_JAVASCRIPT/tree/main#readme"
+}
