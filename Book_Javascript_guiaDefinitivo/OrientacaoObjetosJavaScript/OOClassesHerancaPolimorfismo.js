@@ -74,7 +74,39 @@ console.log(caixaFerr.ferramentas);
 caixaFerrEspec.adicionar("chave de fendaEspecifica");
 caixaFerrEspec.adicionar("chave PhilipsEspecifica");
 caixaFerrEspec.adicionar("chave de bocaEspecifica");
+caixaFerrEspec.adicionar("chave Ale");
+caixaFerrEspec.adicionar("martelo");
+
+// Incluindo teste para verificar se a ferramenta 'chave de fendaEspecifica' foi adicionada
+
+// Incluindo teste para verificar se a ferramenta 'chave Ale' foi adicionada
+
+caixaFerrEspec.remover("chave de fendaEspecifica");
+assert.deepStrictEqual(caixaFerrEspec.ferramentas, [
+    "chave PhilipsEspecifica",
+    "chave de bocaEspecifica",
+    "chave Ale",
+    "martelo",
+]);
+
+console.assert(caixaFerrEspec.ferramentas.includes("chave Ale"), true);
+
+console.log("AQUI ", caixaFerrEspec.ferramentas);
+
+console.assert(
+    caixaFerrEspec.ferramentas.includes("chave Ale") === true,
+    "A ferramenta chave Ale não foi adicionada"
+);
+
+// Incluindo assert pata testar o método adicionar
+console.assert(
+    caixaFerrEspec.adicionar("martelo") === true,
+    "O método adicionar da classe CaixaDeFerramentaEspecifica não aceita ferramentas do tipo martelo - L.93"
+);
+
 console.log(caixaFerrEspec.ferramentas);
+
+// Incluindo assert pata testar o método remover
 
 // Exibindo ferramentas
 
