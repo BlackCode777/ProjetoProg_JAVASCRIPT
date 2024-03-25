@@ -71,8 +71,8 @@ function receveOBJ(obj) {
         obj.hasOwnProperty() !== null
     ) {
         console.log("p.x: ", obj.x, "p.y: ", obj.y, "p.z: ", obj.z);
-        if (obj.propertyIsEnumerable()) {
-            console.log("p.propertyIsEnumerable() AQUI !");
+        for (aqui in p) {
+            console.log(aqui);
         }
     }
 
